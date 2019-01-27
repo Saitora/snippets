@@ -1,0 +1,5 @@
+Exception in thread "main" org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Unable to locate Spring NamespaceHandler for XML schema namespace [http://www.springframework.org/schema/p]
+Offending resource: class path resource [META-INF/beans.xml]
+
+Для исправления необходимо создать файл spring.handlers и прописать в нем handler
+    > http\://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler
