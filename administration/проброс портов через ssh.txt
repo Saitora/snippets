@@ -1,0 +1,7 @@
+1. в /etc/ssh/sshd_config добавить GatewayPorts yes
+2. подключиться командой:
+	$ ssh -nNT -R 11111:localhost:8080 runeseeker@driveavto.su -p 8080
+		* 11111 - порт на удаленной машине
+		* localhost:8080 - параметры локальной машины
+		* runeseeker@driveavto.su -p 8080 - параметры подключения
+		* -nNT - не открывать терминал по ssh
